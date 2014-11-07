@@ -1,17 +1,14 @@
----
-title: "Data Analysis"
-output: word_document
----
 
-Description
+Description:
+------------
 This short study describes the effect of a car weight on miles per gallon consummed. How a car weight might affect MPG. Other factors may affect also MPG such as the number of cylinders, horse power , etc. We also create a linear regression to depict the relationship between weight and MPG and draw a regression graph.
 This report perform an regression analysis on mtcars dataset. It looks to predict Miles Per gallon (mpg) based on weight of a car.
 
 What can we infer from the weigh of a car and how much that it affects the miles per gallon used amomg other variables like the number of cylinders.
 
 
-Usage
-
+Usage:
+------
 1- User enter a car weight
 
 2- Weight is displayed in either Tons or Pounds
