@@ -17,6 +17,7 @@ Usage:
 
 4- A regresion graph is drawn to show how weight affects MPG of a car
 
-```{r}
-summary(cars)
-```
+Link to demo site:
+------------------
+
+https://medh.shinyapps.io/myApp1/
