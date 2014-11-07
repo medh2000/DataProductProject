@@ -1,0 +1,20 @@
+---
+title: "Data Analysis"
+output: word_document
+---
+
+This report perform an regresllion analysuis on mtcars dataset. It look to predict Miles Per gallon (mpg) based on weight of a car.
+
+What can we infer from the weigh of a car and how much that it affects the miles per gallon run amomg other variables like the numbe of cylinders.
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

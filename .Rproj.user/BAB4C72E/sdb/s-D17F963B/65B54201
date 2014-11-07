@@ -1,0 +1,17 @@
+{
+    "contents" : "shinyUI(fluidPage(\n  pageWithSidebar(\n    # Application title\n    headerPanel(\"Mile Per Gallon prediction\"),\n    sidebarPanel(\n      numericInput('weight', 'Enter car weight (tonnes)', 2, min = 1, max = 8, step = .5),\n      radioButtons(\"radio\", label = h3(\"Weight type\"),\n                   choices = list(\"Tons\" = \"Tons\", \"Pounds\" = \"Pounds\"),selected = \"Tons\"),\n    \n      submitButton('Submit')\n    ),\n    mainPanel(\n      \n      \n      h3('Results of Mile Per Gallon prediction'),\n      h4('You entered'),\n      verbatimTextOutput(\"inputValue\"),\n      h4('Tons or Pounds '),\n      verbatimTextOutput(\"radioValue\"),\n      h4('Which resulted in a prediction of '),\n      verbatimTextOutput(\"prediction\"),\n      h4(\"Scatter Plot of car weight in tonnes vs MIle Per Gallons\"),\n      plotOutput('carWeight')\n    )\n  )\n))",
+    "created" : 1412271901232.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "422277660",
+    "id" : "65B54201",
+    "lastKnownWriteTime" : 1414302341,
+    "path" : "~/classes/Coursera/RShinyProject/App-1/ui.R",
+    "project_path" : "App-1/ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

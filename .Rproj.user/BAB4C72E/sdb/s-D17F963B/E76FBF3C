@@ -1,0 +1,17 @@
+{
+    "contents" : "\nlibrary(UsingR)\n\n# load mt cars \ndata(mtcars)\n\nattach(mtcars)\n\n# Function returns a car weight bases on the  regression line equation\n# y = mx + b\n# y : car weight\n# m: slope\n# b: y-intercept\ncarWeight <- function(weight) {\n       \n                (weight * -5.344) + 37.285\n         \n           }    \n##########################################################\nshinyServer(\n  function(input, output) {\n    output$inputValue <- renderPrint({input$weight})\n   \n   \n    output$prediction <- renderPrint({carWeight(input$weight)})\n    output$radioValue <- renderPrint({input$radio})  \n    output$carWeight <- renderPlot({\n      plot(wt, mpg, main=\"Scatterplot Weigtth \", \n           xlab=\"Car Weight \", ylab=\"Miles Per Gallon \", pch=19)\n      abline(lm(mpg~wt), col=\"red\") # regression line (y~x) \n      lines(lowess(wt,mpg), col=\"blue\") # lowess line (x,y)\n    })\n  }\n)",
+    "created" : 1412271876425.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "100848099",
+    "id" : "E76FBF3C",
+    "lastKnownWriteTime" : 1414302671,
+    "path" : "~/classes/Coursera/RShinyProject/App-1/server.R",
+    "project_path" : "App-1/server.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
